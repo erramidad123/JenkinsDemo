@@ -6,6 +6,8 @@ jobs:
     name: job1
     runs-on: windows-latest
     steps:
-      - name: running single command in Job1 
+      - name: step 1 - running single command in Job1 
         run : echo "Hi from job1 runner"
+      - name : step 2 - check os 
+        run : dir 
   
