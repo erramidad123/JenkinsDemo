@@ -1,6 +1,8 @@
 name: my first worflow concurrency
 on: 
   workflow_dispatch: 
+  schedule:
+    - cron: "*/5 * * * *"
 jobs:
   job1:
     name: job1
