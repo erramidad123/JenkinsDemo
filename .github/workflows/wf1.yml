@@ -18,4 +18,23 @@ jobs:
         run : echo "rachid"
       - name : step2:echo last name
         run : echo "errami"
+
+  job3:
+    name: job3
+    needs: job1
+    runs-on: windows-latest
+    steps:
+      - name: job3 step 1
+        run : sleep 10 
+
+  job4:
+    name: job4
+    needs: [job1,job2,job3]
+    runs-on: windows-latest
+    steps:
+      - name: job4 step 1
+        run : sleep 10 
+    
+    
+  
   
