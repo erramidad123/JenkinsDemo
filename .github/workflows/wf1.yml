@@ -4,5 +4,7 @@ jobs:
   job1:
     name: job1
     runs-on: windows-latest
-    
+    steps:
+      - name: running single command in Job1 
+      run : echo "Hi from job1 runner"
   
