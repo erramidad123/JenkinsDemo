@@ -10,4 +10,12 @@ jobs:
         run : echo "Hi from job1 runner"
       - name : step 2 - check os 
         run : dir 
+  job2:
+    name : job2 
+    runs-on: windows-latest
+    steps:
+      - name : step1:echo name
+        run : echo "rachid"
+      - name : step2:echo last name
+        run : echo "errami"
   
